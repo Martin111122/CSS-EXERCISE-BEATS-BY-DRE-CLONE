@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    align-items: center;
+    padding: 0 20px;
+    background: white;
+}
+
+.brand {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+}
+
+.brand img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+}
+
+.nav-links {
+    justify-self: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 170px;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-links a {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links .gift-link {
+    color: red;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.nav-actions {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-actions button {
+    width: 30px;
+    height: 46px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.nav-actions img {
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+}
